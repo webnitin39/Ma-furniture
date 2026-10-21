@@ -85,7 +85,9 @@ const ProductDetails = () => {
             addToCart(product)
             navigate("/cart")
           }}>
+
             Add to Cart
+            
           </button>
         </div>
       </div>

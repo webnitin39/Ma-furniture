@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold">
-            Maa<span className="text-[#c49a6c]">Furniture</span>
+            Ma<span className="text-[#c49a6c]">Furniture</span>
           </h2>
 
           <p className="text-gray-400 mt-4 leading-7 text-sm">
@@ -67,7 +67,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-gray-700 mt-10 pt-5 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} Maa Furniture. All rights reserved.
+        © {new Date().getFullYear()} Ma Furniture. All rights reserved.
       </div>
     </footer>
   );

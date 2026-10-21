@@ -25,13 +25,21 @@ const Navbar = () => {
          </div>
 
         <div className='w-[60%] h-[70%] md:w-[20%]  flex justify-between'>
-          <div className='w-[50%]  flex gap-1 flex-1 items-center text-[16px] md:flex-none md:w-[60%]'><i className="ri-search-2-line"></i><input className='w-full min-w-0 outline-none' type="text" value={search} placeholder='search' onChange={(e)=>{
+          <div className="w-[50%] flex flex-1 items-center gap-2 rounded-lg border border-white/30 px-3 py-2 text-[16px] transition-colors focus-within:border-[#987654] md:w-[60%] md:flex-none"><i className="ri-search-2-line"></i><input className="w-full min-w-0 bg-transparent text-white outline-none placeholder:text-white/70" type="text" value={search} placeholder='search' onChange={(e)=>{
             setSearch(e.target.value)
           }}/></div>
           <div className='w-[30%] flex items-center justify-between cursor-pointer '>
 
-         
-          <Link to='/cart' className='w-[30%]  '><i className="ri-shopping-cart-line text-[25px]"></i><span  className="bg-gray text-white rounded-full sm:px-2  h-1/3 text-xs">{cartCount}</span></Link>
+     <Link
+  to="/cart"
+  className="relative inline-flex items-center justify-center text-white transition-opacity duration-300 hover:opacity-80"
+>
+  <i className="ri-shopping-cart-line text-[25px]"></i>
+
+  <span className="absolute -right-3 -top-2 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#987654] px-1 text-xs font-semibold text-white">
+    {cartCount}
+  </span>
+</Link>
           <button className=' w-[30%] md:hidden  '><i className="ri-menu-line text-[25px]" onClick={()=>setMenuOpen(!MenuOpen) }></i></button>
 
            </div>

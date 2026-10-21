@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
     <div className="group rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition duration-300 md:hover:-translate-y-1 hover:shadow-lg">
       <img
         src={product.image}
-        alt='image'
+        alt={product.name}
         className="w-full h-48 object-cover rounded-lg transition duration-300 md:group-hover:scale-[1.02]"
       />
 
@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
           ₹{product.oldPrice.toLocaleString("en-IN")}
         </span>
       </div>
-      <Link to={`/product/${product.id}`} className="mt-4 block w-full rounded-lg bg-gray-900 py-2 text-center text-white hover:bg-gray-700 transition-colors duration-300">View details</Link>
+      <Link to={`/product/${product.id}`} className="mt-4 block w-full rounded-lg bg-[#987654] py-2 text-center text-white transition-colors duration-300 hover:bg-[#806044]">View details</Link>
     </div>
   );
 };

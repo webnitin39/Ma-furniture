@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import { CartProvider } from './contexts/CartContext';
 import { SearchProvider } from './contexts/SearchContext';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
     <CartProvider>
 
     <BrowserRouter>
+    <ScrollToTop/>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>} />
